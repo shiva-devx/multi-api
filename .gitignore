@@ -137,3 +137,57 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+# --------------------------------------------------
+# Root
+# --------------------------------------------------
+
+# Ignore build artifacts from both frontend and backend
+dist/
+build/
+out/
+
+# vscode + editor configs (optional)
+.vscode/
+.idea/
+
+# --------------------------------------------------
+# Frontend (Vite + React + Tailwind)
+# --------------------------------------------------
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/dist/
+frontend/.vite/
+
+# Cache
+frontend/.cache/
+frontend/.turbo/
+frontend/.parcel-cache/
+
+# --------------------------------------------------
+# Backend (Node.js / Express)
+# --------------------------------------------------
+backend/node_modules/
+backend/.env
+backend/.env.local
+
+# Logs
+backend/logs/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# PM2 logs
+backend/.pm2/
+
+# Temporary uploads (if you use multer or temp dir)
+backend/uploads/
+backend/tmp/
+
+# --------------------------------------------------
+# Optional Package Managers
+# --------------------------------------------------
+pnpm-lock.yaml
+yarn.lock
